@@ -1,8 +1,9 @@
 // Styling for the navbar
 #mainNav {
-  position: absolute;
+  position: fixed;
   border-bottom: 1px solid $gray-200;
   background-color: white;
+  margin-bottom: 20px;
   @include sans-serif-font;
   .navbar-brand {
     font-weight: 800;
@@ -27,23 +28,24 @@
   }
   @media only screen and (min-width: 992px) {
     border-bottom: 1px solid transparent;
-    background: transparent;
+    background: white;
+    padding: 20px;
     .navbar-brand {
       padding: 10px 20px;
-      color: $white;
+      color: $indigo;
       &:focus,
       &:hover {
-        color: fade-out($white, .2);
+        color: fade-out($blue, .2);
       }
     }
     .navbar-nav {
       > li.nav-item {
         > a {
           padding: 10px 20px;
-          color: $white;
+          color: $indigo;
           &:focus,
           &:hover {
-            color: fade-out($white, .2);
+            color: fade-out($blue, .2);
           }
         }
       }
