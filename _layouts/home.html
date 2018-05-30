@@ -8,25 +8,22 @@ layout: default
   {% else %}
     <header class="masthead">
     {% endif %}
-    <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
-            <h1>{{ site.title }}</h1>
-            {% if site.description %}
-              <span class="subheading">{{ site.description }}</span>
-            {% endif %}
+            
+          
           </div>
         </div>
       </div>
     </div>
   </header>
   
-  <div class="container-fluid" style="background-color:red;margin-top:-50px;margin-bottom:50px">
+  <div class="container-fluid under-header">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <h1> GTL/KG is the premiere commercial realestate firm in Los Angeles </h1>
+        <h2> “GTL Roberston Properties create centers of excellence that help communities and businesses grow”</h2>
       </div>
     </div>
   </div>
@@ -45,14 +42,16 @@ layout: default
     
     <div class="row">
 
-      <div class="col-sm-4 offset-sm-2">
+      <div class="col-sm-4 offset-sm-2 text-center">
 
-        <img class="img-fluid"  src="http://via.placeholder.com/300x300"/>
+        <img class="img-fluid property-img"  src="{{ page.property1 | prepend: site.baseurl | replace: '//', '/' }}"/>
+        <a href="#" class="btn btn-sm btn-primary mx-auto"> Learn More </a> 
 
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 text-center">
 
-        <img class="img-fluid"  src="http://via.placeholder.com/300x300"/>
+        <img class="img-fluid property-img"  src="{{ page.property2 | prepend: site.baseurl | replace: '//', '/' }}"/>
+        <a href="#" class="btn btn-sm btn-primary mx-auto"> Learn More </a> 
 
       </div>
     </div>
@@ -60,14 +59,16 @@ layout: default
   <div class="container">
     <div class="row">
 
-      <div class="col-sm-4 offset-sm-2">
+      <div class="col-sm-4 offset-sm-2 text-center">
 
-        <img class="img-fluid" src="http://via.placeholder.com/300x300"/>
+        <img class="img-fluid property-img" src="{{ page.property3 | prepend: site.baseurl | replace: '//', '/' }}"/>
+        <a href="#" class="btn btn-sm btn-primary mx-auto"> Learn More </a> 
 
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 text-center">
 
-        <img class="img-fluid" src="http://via.placeholder.com/300x300"/>
+        <img class="img-fluid property-img" src="{{ page.property4 | prepend: site.baseurl | replace: '//', '/' }}"/>
+        <a href="#" class="btn btn-sm btn-primary mx-auto"> Learn More </a> 
 
       </div>
     </div>
@@ -75,14 +76,29 @@ layout: default
 
   <div class="container-fluid about">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-4 icon">
         <img class="img-fluid mx-auto" src="http://via.placeholder.com/200x200"/>
+        <h4> Attribute 1 </h4>
+        <p> short description of attribute </p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 icon">
         <img class="img-fluid mx-auto" src="http://via.placeholder.com/200x200"/>
+        <h4> Attribute 2 </h4>
+        <p> short description of attribute </p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 icon">
         <img class="img-fluid mx-auto" src="http://via.placeholder.com/200x200"/>
+        <h4> Attribute 3 </h4>
+        <p> short description of attribute </p>
+
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto text-center block-quote">
+        <h3> How can we help you? Get in contact today! </h3> 
+        <a href="#" class="btn btn-gold"> Contact Us! </a>
       </div>
     </div>
   </div>

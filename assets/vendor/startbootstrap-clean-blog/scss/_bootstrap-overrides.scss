@@ -1,24 +1,40 @@
 // Bootstrap overrides for this template
 .btn {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 800;
-  padding: 15px 25px;
+  padding: 15px 50px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border-radius: 0;
-  @include sans-serif-font;
+  border-radius: 50px;
+  font-family: $Josefin;
+
 }
 
 .btn-primary {
-  background-color: $primary;
-  border-color: $primary;
+  background-color: $darkPurple;
+  border-color: $darkPurple;
   &:hover,
   &:focus,
   &:active {
     color: $white;
-    background-color: darken($primary, 7.5) !important;
-    border-color: darken($primary, 7.5) !important;
+    background-color: darken($darkPurple, 7.5) !important;
+    border-color: darken($darkPurple, 7.5) !important;
   }
+}
+
+.btn-gold {
+  padding: 15px 70px;
+  background-color: $gold;
+  border-color: $gold;
+  color:$white;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: darken($gold, 7.5) !important;
+    border-color: darken($gold, 7.5) !important;
+  }
+  
 }
 
 .btn-lg {
