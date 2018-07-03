@@ -29,3 +29,5 @@ fields:
 - type: boolean
   name: property4Vacancy
   label: Beverly Grove Vacancy
+pages:
+- index.html
