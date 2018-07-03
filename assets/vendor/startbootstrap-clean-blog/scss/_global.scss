@@ -7,10 +7,16 @@ body {
 
 p {
   line-height: 1.5;
+  font-family: $Josefin;
+  font-weight: 300;
   margin: 30px 0;
   a {
     text-decoration: underline;
   }
+}
+
+about p {
+  padding: 15px;
 }
 
 h1,
@@ -21,13 +27,20 @@ h6 {
   font-weight: 800;
   text-align: center;
   font-family: $Josefin;
+  letter-spacing:1.14px;
 }
 
 h3 {
   font-weight: 700;
   text-align: center; 
   font-family: $Cardo;
+  color: $darkPurple;
 
+}
+
+.icon img {
+  margin-bottom:30px;
+  
 }
 
 a {
@@ -42,6 +55,12 @@ a {
 blockquote {
   font-style: italic;
   color: $gray-600;
+}
+
+hr {
+    width: 15%;
+    height: 2px;
+    background-color: $lavendar;
 }
 
 .section-heading {
@@ -61,14 +80,88 @@ blockquote {
   border-bottom-left-radius: 5px;
 }
 
+
+.announcement-bar {
+      height:20px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      background-color:$darkPurple;
+      z-index:3000;
+    }
+
 .container {
   padding-bottom:30px;
 }
 
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.property-container {
+  position:relative; 
+ 
+}
+
+.property-container h2 {
+  color: $white;
+  
+}
+
+.space-available {
+  position: absolute; 
+  background-color: rgba(255,173,55, .75);
+  bottom: 30px;
+  width: 100%;
+
+}
+
+.no-gutter {
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+}
+
+.space-available h4 {
+  padding: 20px;
+  color: $white;
+  margin-bottom: 0px;
+  font-weight: 300;
+  letter-spacing:1.71px;
+}
+
 .about {
-  background-color:$indigo;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color:$darkPurple;
   color:$white;
-  padding:100px;
+  padding:50px;
+  position: relative;
+}
+
+.about-header {
+  color: $white
+
+}
+
+.about-hr {
+  background-color:$white;
+  margin-bottom: 50px;
+}
+
+.about-overlay {
+  width: 100%;
+  height:100%;
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $darkPurple;
+  opacity:.75;
 }
 
 .icon {
@@ -77,11 +170,16 @@ blockquote {
 
 .property-img {
   margin-bottom: 30px;
+  object-fit: cover;
 }
 
 .block-quote {
   padding-top:100px;
   padding-bottom:100px;
+}
+
+.icon img {
+  max-width:100px;
 }
 
 
@@ -92,6 +190,8 @@ margin-bottom:50px
 
 
 }
+
+
 
 .under-header h2 {
   font-weight: 300;
@@ -121,4 +221,11 @@ img::selection {
 img::-moz-selection {
   color: $white;
   background: transparent;
+}
+
+.btn-primary {
+  &:focus,
+  &:hover {
+            color: fade-out($gold, .2);
+          }
 }

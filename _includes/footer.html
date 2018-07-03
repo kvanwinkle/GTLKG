@@ -1,45 +1,48 @@
 <!-- Footer -->
 
-<hr>
+
 
 <footer>
-  <div class="container">
+  <div class="container" style="padding-bottom:0px;">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <ul class="list-inline text-center">
-          {% if site.twitter_username %}
-          <li class="list-inline-item">
-            <a href="https://www.twitter.com/{{ site.twitter_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
+      <div class="col-sm-2 offset-sm-3 mx-auto">
+        <ul style="list-style:none;">
+         <li class="footer-item">
+            <a class="footer-link" href="/posts}}">
+             View Portfolio
             </a>
           </li>
-          {% endif %}
-          {% if site.facebook_username %}
-          <li class="list-inline-item">
-            <a href="https://www.facebook.com/{{ site.facebook_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-              </span>
+          <li class="footer-item">
+            <a class="footer-link" href="/about">
+             About
             </a>
           </li>
-          {% endif %}
-          {% if site.github_username %}
-          <li class="list-inline-item">
-            <a href="https://github.com/{{ site.github_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-              </span>
+          <li class="footer-item">
+            <a class="footer-link" href="/contact">
+             Contact
             </a>
           </li>
-          {% endif %}
         </ul>
-        <p class="copyright text-muted">Copyright &copy; {{ site.author }} {{ 'now' | date: "%Y" }}</p>
+      </div>
+      <div class="col-sm-2 mx-auto" style="display: flex;
+  align-items: center;">
+            <a href="https://www.instagram.com/{{ site.instagram_username }}" style="margin:0px auto">
+              <span class="fa-stack" style="font-size: 2.5em">
+                <i class="fa fa-circle fa-stack-2x" style="color:#191B47"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+      </div>
+      <div class="col-sm-2 mx-auto">
+        <p> GTL/KG, <br> Beverly Hills, CA </p>
       </div>
     </div>
   </div>
+  <div class="container">
+    <div class="row">
+      <div class ="col-lg-8 col-md-10 mx-auto">
+        <p class="copyright text-muted"> Made by Kvanwink Designs </p>
+      </div>
+    </div>
+  </div>      
 </footer>

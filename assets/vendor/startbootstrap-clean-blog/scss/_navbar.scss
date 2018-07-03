@@ -1,14 +1,23 @@
 // Styling for the navbar
 #mainNav {
-  position: fixed;
+  position: absolute;
+  top: 0;
   border-bottom: 1px solid $gray-200;
   background-color: white;
-  margin-bottom: 20px;
-  @include sans-serif-font;
+  margin-top:20px;
+  font-family:$Josefin;
+
   .navbar-brand {
     font-weight: 800;
     color: $gray-800;
+    font-size: 26px;
   }
+
+  .container {
+    padding: 0px;
+  }
+
+
   .navbar-toggler {
     font-size: 12px;
     font-weight: 800;
@@ -32,24 +41,25 @@
     padding: 20px;
     .navbar-brand {
       padding: 10px 20px;
-      color: $indigo;
+      color: $darkPurple;
       &:focus,
       &:hover {
-        color: fade-out($blue, .2);
+        color: fade-out($gold, .2);
       }
     }
     .navbar-nav {
       > li.nav-item {
         > a {
           padding: 10px 20px;
-          color: $indigo;
+          color: $darkPurple;
           &:focus,
           &:hover {
-            color: fade-out($blue, .2);
+            color: fade-out($gold, .2);
           }
         }
       }
     }
+
   }
   @media only screen and (min-width: 992px) {
     -webkit-transition: background-color 0.2s;

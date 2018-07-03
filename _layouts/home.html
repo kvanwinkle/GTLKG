@@ -23,7 +23,8 @@ layout: default
   <div class="container-fluid under-header">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <h2> “GTL Roberston Properties create centers of excellence that help communities and businesses grow”</h2>
+        <h2> GTL/KG is one of Southern California’s oldest privately-owned property
+companies. We manage, develop, and invest in premier real estate in <br>Los Angeles.</h2>
       </div>
     </div>
   </div>
@@ -31,7 +32,7 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <h3> Our Properties </h3>
+        <h3> Our Portfolio </h3>
         <hr>
       </div>
     </div>
@@ -42,15 +43,33 @@ layout: default
     
     <div class="row">
 
-      <div class="col-sm-4 offset-sm-2 text-center">
-
+      <div class="col-md-4 offset-md-1 text-center">
+        <div class="property-container">
+        {% if page.property1Vacancy == true %}  
+        <div class="space-available">
+        <h4> Space Available! </h4>
+        </div>
+        {% endif %}
+        <h2 class="centered"> Beverly Hills </h2>
         <img class="img-fluid property-img"  src="{{ page.property1 | prepend: site.baseurl | replace: '//', '/' }}"/>
-        <a href="#" class="btn btn-sm btn-primary mx-auto"> Learn More </a> 
+        </div>
+        <a href="#" style="margin-bottom:30px;" class="btn btn-sm btn-primary mx-auto"> Learn More </a> 
 
       </div>
-      <div class="col-sm-4 text-center">
 
-        <img class="img-fluid property-img"  src="{{ page.property2 | prepend: site.baseurl | replace: '//', '/' }}"/>
+      <div class="col-md-2" style="margin-right:-15px;margin-left:-15px;"></div>
+      
+      <div class="col-md-4 text-center">
+
+        <div class="property-container">
+        {% if page.property2Vacancy == true %}  
+        <div class="space-available">
+        <h4> Space Available! </h4>
+        </div>
+        {% endif %}
+        <h2 class="centered"> West Third Street</h2>
+        <img class="img-fluid property-img" src="{{ page.property2 | prepend: site.baseurl | replace: '//', '/' }}"/>
+        </div>
         <a href="#" class="btn btn-sm btn-primary mx-auto"> Learn More </a> 
 
       </div>
@@ -59,15 +78,32 @@ layout: default
   <div class="container">
     <div class="row">
 
-      <div class="col-sm-4 offset-sm-2 text-center">
-
+      <div class="col-md-4 offset-md-1 text-center">
+      <div class="property-container">
+        {% if page.property3Vacancy == true %}  
+        <div class="space-available">
+        <h4> Space Available! </h4>
+        </div>
+        {% endif %}
+        <h2 class="centered"> Melrose </h2>
         <img class="img-fluid property-img" src="{{ page.property3 | prepend: site.baseurl | replace: '//', '/' }}"/>
-        <a href="#" class="btn btn-sm btn-primary mx-auto"> Learn More </a> 
+      </div>
+        <a href="#" style="margin-bottom:30px;" class="btn btn-sm btn-primary mx-auto"> Learn More </a> 
+
 
       </div>
-      <div class="col-sm-4 text-center">
-
+      <div class="col-md-2" style="margin-right:-15px;margin-left:-15px;"></div>
+      <div class="col-md-4 text-center">
+          
+        <div class="property-container">
+        {% if page.property4Vacancy == true %}  
+        <div class="space-available">
+        <h4> Space Available! </h4>
+        </div>
+        {% endif %}
+        <h2 class="centered"> Beverly Grove </h2>
         <img class="img-fluid property-img" src="{{ page.property4 | prepend: site.baseurl | replace: '//', '/' }}"/>
+        </div>
         <a href="#" class="btn btn-sm btn-primary mx-auto"> Learn More </a> 
 
       </div>
@@ -75,30 +111,64 @@ layout: default
   </div>
 
   <div class="container-fluid about">
+  <!--   <div class="about-overlay"></div> -->
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h3 class="about-header"> About GTL/KG </h3>
+        <hr class="about-hr">
+      </div>
+    </div>
+    
     <div class="row">
       <div class="col-sm-4 icon">
-        <img class="img-fluid mx-auto" src="http://via.placeholder.com/200x200"/>
-        <h4> Attribute 1 </h4>
-        <p> short description of attribute </p>
+        <img class="img-fluid mx-auto" src="img/community.svg"/>
+        <h4> Community </h4>
+        <p> As property owners and managers with nearly 100
+            years’ experience in Southern California, we know how important it is for a business
+            integrate itself in the community. We make it our mission to connect our tenants with
+            neighborhood resources so that they become flourishing and active members of their
+            new homes. </p>
       </div>
       <div class="col-sm-4 icon">
-        <img class="img-fluid mx-auto" src="http://via.placeholder.com/200x200"/>
-        <h4> Attribute 2 </h4>
-        <p> short description of attribute </p>
+        <img class="img-fluid mx-auto" src="img/neighborhood.svg"/>
+        <h4> Neighborhood enhancements </h4>
+        <p> We’re committed to making our
+            cities the best they can be. We recruit top businesses in dining, shopping, beauty,
+            entertainment, and more to improve the visitor and residential experiences in our
+            neighborhoods. </p>
       </div>
       <div class="col-sm-4 icon">
-        <img class="img-fluid mx-auto" src="http://via.placeholder.com/200x200"/>
-        <h4> Attribute 3 </h4>
-        <p> short description of attribute </p>
+        <img class="img-fluid mx-auto" src="img/family.svg"/>
+        <h4> Family operated </h4>
+        <p> Since our start in 1923, GTL/KG has been
+            completely family operated. Four generations have made sure that our
+            tenants—ranging from Fortune 500 companies to start-ups—feel at home in our
+            properties. Our tenants are part of the family! </p>
 
       </div>
     </div>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto text-center block-quote">
-        <h3> How can we help you? Get in contact today! </h3> 
+      <div class="col-lg-10 col-md-12 mx-auto text-center block-quote">
+        <h2 style="margin-bottom:40px"> How can we help you? Get in contact today! </h2> 
         <a href="#" class="btn btn-gold"> Contact Us! </a>
       </div>
     </div>
   </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 no-gutter">
+        <img class="img-fluid" src="img/Sunglasses.jpg"/>
+     </div>
+       <div class="col-sm-3 no-gutter">
+        <img class="img-fluid" src="img/Coffee.jpg"/>
+      </div>
+       <div class="col-sm-3 no-gutter">
+        <img class="img-fluid" src="img/Shoes.jpg"/>
+      </div>
+       <div class="col-sm-3 no-gutter">
+        <img class="img-fluid" src="img/IMAX.jpg"/>
+      </div>
+    </div>  

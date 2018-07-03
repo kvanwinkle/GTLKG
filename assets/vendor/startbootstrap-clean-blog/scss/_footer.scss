@@ -1,9 +1,14 @@
 // Styling for the footer
 footer {
-  padding: 50px 0 65px;
+  padding:50px 0 0px;
+  color:$white;
+  background-color:$darkPurple;
+  margin-left: -15px;
+  margin-right: -15px;
   .list-inline {
     margin: 0;
     padding: 0;
+
   }
   .copyright {
     font-size: 14px;
@@ -11,3 +16,32 @@ footer {
     text-align: center;
   }
 }
+
+.footer-link {
+  line-height:0;
+  font-family: $Josefin;
+  font-size:16px;
+  color:$white;
+}
+
+p {
+  
+  font-family: $Josefin;
+    font-size:16px; 
+    font-weight: 600;
+}
+
+a:hover {
+  color:$gold;
+  text-decoration:none;
+}
+
+.col-sm-2 {
+  @media screen and (max-width: 576px) {
+    text-align: center;
+    ul {
+      padding-left:0px;
+    }
+  }
+}
+
