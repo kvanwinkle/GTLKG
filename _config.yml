@@ -2,8 +2,8 @@ title:             GTL/KG
 email:             your-email@example.com
 description:       Your Company Description
 author:            Katherine Van Winkle
-baseurl:           "/GTLKG"
-url:               ""
+baseurl:           ""
+url:               "/GTLKG"
 
 # Social Profiles
 instagram_username:  kittysocal
