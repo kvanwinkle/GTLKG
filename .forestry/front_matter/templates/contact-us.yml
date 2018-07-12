@@ -1,55 +1,38 @@
 ---
 label: Contact Us
-hide_body: false
+hide_body: true
 is_partial: false
 fields:
-- name: layout
-  label: Layout
-  type: text
-  hidden: layout
-  default: ''
-- name: title
-  label: Title
-  type: text
-  hidden: title
-  default: ''
 - name: background
-  label: Background
+  label: Header Image
   type: file
   hidden: background
   default: ''
-- name: description
-  label: Description
-  type: text
-  hidden: description
-  default: ''
 - name: image
-  label: Image
+  label: Contact Image
   type: file
   hidden: image
   default: ''
 - name: address_line1
   label: Address line1
   type: text
-  hidden: address_line1
+  hidden: false
   default: ''
 - name: address_line2
-  label: Address line2
+  label: Address line 2
   type: text
-  hidden: address_line2
+  hidden: false
   default: ''
 - name: phone
-  label: Phone
+  label: Phone Number
   type: text
-  hidden: phone
+  hidden: false
   default: ''
 - name: email
   label: Email
   type: text
-  hidden: email
+  hidden: false
   default: ''
-- name: bottom_text
-  label: Bottom text
-  type: textarea
-  hidden: bottom_text
-  default: ''
+- type: textarea
+  name: bottom_text
+  label: 'Bottom Text '
