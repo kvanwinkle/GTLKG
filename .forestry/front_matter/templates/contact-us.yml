@@ -36,3 +36,5 @@ fields:
 - type: textarea
   name: bottom_text
   label: 'Bottom Text '
+pages:
+- contact.html
