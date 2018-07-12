@@ -16,7 +16,7 @@ fields:
   name: paragraph_1
   label: Paragraph 1
   config:
-    wysiwyg: false
+    wysiwyg: true
     schema:
       format: markdown
 - type: textarea
