@@ -38,3 +38,5 @@ fields:
 - type: textarea
   name: point4
   label: Bullet Point 4
+pages:
+- about.html
