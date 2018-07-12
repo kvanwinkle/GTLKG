@@ -1,6 +1,6 @@
 ---
 label: 'About '
-hide_body: true
+hide_body: false
 is_partial: false
 fields:
 - type: file
@@ -15,9 +15,13 @@ fields:
 - type: textarea
   name: paragraph_1
   label: Paragraph 1
-- type: text
-  label: Paragraph 2
+  config:
+    wysiwyg: false
+    schema:
+      format: markdown
+- type: textarea
   name: paragraph_2
+  label: Paragraph 2
 - type: text
   name: point1
   label: 'Bullet Point 1 '
