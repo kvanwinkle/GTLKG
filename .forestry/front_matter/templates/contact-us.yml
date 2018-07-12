@@ -6,12 +6,12 @@ fields:
 - name: background
   label: Header Image
   type: file
-  hidden: background
+  hidden: false
   default: ''
 - name: image
   label: Contact Image
   type: file
-  hidden: image
+  hidden: false
   default: ''
 - name: address_line1
   label: Address line1
