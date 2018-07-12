@@ -1,0 +1,8 @@
+---
+label: 'About '
+hide_body: true
+is_partial: false
+fields:
+- type: file
+  label: Header Image
+  name: background
