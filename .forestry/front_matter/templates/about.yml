@@ -6,3 +6,27 @@ fields:
 - type: file
   label: Header Image
   name: background
+- type: text
+  name: page_title
+  label: 'Page Title '
+- type: file
+  name: about_image
+  label: About Image
+- type: textarea
+  name: paragraph_1
+  label: Paragraph 1
+- type: text
+  label: Paragraph 2
+  name: paragraph_2
+- type: text
+  name: point1
+  label: 'Bullet Point 1 '
+- type: text
+  name: point2
+  label: Bullet Point 2
+- type: text
+  name: point3
+  label: Bullet point 3
+- type: text
+  name: point4
+  label: Bullet point 4
