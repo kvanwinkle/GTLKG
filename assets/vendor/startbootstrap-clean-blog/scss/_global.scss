@@ -99,6 +99,43 @@ a {
 
   }
 
+
+
+
+
+
+.propertyStat {
+  text-align: center;
+
+.odd {
+  background-color:$darkPurple;
+} 
+
+.even {
+  background-color:$lavendar;
+}
+  
+  div {
+  width: 75%;
+  margin: 0px auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  
+
+  }
+
+
+  h1{
+    color: white;
+  }
+
+  p {
+    color: white;
+  }
+  
+}
+
 blockquote {
   font-style: italic;
   color: $gray-600;
