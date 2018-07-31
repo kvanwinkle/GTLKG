@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="485px" height="485px" viewBox="0 0 485 485" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>scroll</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="scroll" fill="#FFAD37" fill-rule="nonzero">
+            <g id="Group" transform="translate(242.500000, 242.500000) rotate(90.000000) translate(-242.500000, -242.500000) ">
+                <path d="M413.974,71.026 C368.171,25.225 307.274,0 242.5,0 C177.726,0 116.829,25.225 71.026,71.026 C25.225,116.829 1.42108547e-14,177.726 1.42108547e-14,242.5 C1.42108547e-14,307.274 25.225,368.171 71.026,413.974 C116.829,459.775 177.726,485 242.5,485 C307.274,485 368.171,459.775 413.974,413.974 C459.775,368.171 485,307.274 485,242.5 C485,177.726 459.775,116.829 413.974,71.026 Z M242.5,455 C125.327,455 30,359.673 30,242.5 C30,125.327 125.327,30 242.5,30 C359.673,30 455,125.327 455,242.5 C455,359.673 359.673,455 242.5,455 Z" id="Shape"></path>
+                <polygon id="Shape" points="193.228 135.589 299.791 242.5 193.228 349.411 214.476 370.589 342.148 242.5 214.476 114.411"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

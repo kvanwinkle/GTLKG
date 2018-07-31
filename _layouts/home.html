@@ -8,10 +8,13 @@ layout: default
   {% else %}
     <header class="masthead">
     {% endif %}
+    <a href="#top" class="scroller"><div class="scroll"></div></a>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
+
+
             
           
           </div>
@@ -23,16 +26,15 @@ layout: default
   <div class="container-fluid under-header">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <h2> Welcome to GTL/KG, one of California’s oldest privately-owned property development,
-investment, and management companies.</h2>
+        <h2> {{page.top_quote}}</h2>
       </div>
     </div>
   </div>
 
-  <div class="container">
-    <div class="row">
+  <div class="container" id="top">
+    <div class="row" style="padding-top:15px;">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <h3> Greater Los Angeles Portfolio </h3>
+        <h3> {{page.portfolio_title}} </h3>
         <hr>
       </div>
     </div>
@@ -50,7 +52,7 @@ investment, and management companies.</h2>
         <h4> Space Available! </h4>
         </div>
         {% endif %}
-        <h2 class="centered"> Beverly Hills </h2>
+        <h2 class="centered"> {{page.property1_name}} </h2>
         <img class="img-fluid property-img"  src="{{ page.property1 | prepend: site.baseurl | replace: '//', '/' }}"/>
         </div>
         <a href="#" style="margin-bottom:30px;" class="btn btn-sm btn-primary mx-auto"> Learn More </a> 
@@ -67,7 +69,7 @@ investment, and management companies.</h2>
         <h4> Space Available! </h4>
         </div>
         {% endif %}
-        <h2 class="centered"> West Third Street</h2>
+        <h2 class="centered">{{page.property2_name}} </h2>
         <img class="img-fluid property-img" src="{{ page.property2 | prepend: site.baseurl | replace: '//', '/' }}"/>
         </div>
         <a href="#" class="btn btn-sm btn-primary mx-auto"> Learn More </a> 
@@ -85,7 +87,7 @@ investment, and management companies.</h2>
         <h4> Space Available! </h4>
         </div>
         {% endif %}
-        <h2 class="centered"> Melrose </h2>
+        <h2 class="centered"> {{page.property3_name}} </h2>
         <img class="img-fluid property-img" src="{{ page.property3 | prepend: site.baseurl | replace: '//', '/' }}"/>
       </div>
         <a href="#" style="margin-bottom:30px;" class="btn btn-sm btn-primary mx-auto"> Learn More </a> 
@@ -101,7 +103,7 @@ investment, and management companies.</h2>
         <h4> Space Available! </h4>
         </div>
         {% endif %}
-        <h2 class="centered"> Beverly Grove </h2>
+        <h2 class="centered"> {{page.property4_name}} </h2>
         <img class="img-fluid property-img" src="{{ page.property4 | prepend: site.baseurl | replace: '//', '/' }}"/>
         </div>
         <a href="#" class="btn btn-sm btn-primary mx-auto"> Learn More </a> 
@@ -114,34 +116,26 @@ investment, and management companies.</h2>
   <!--   <div class="about-overlay"></div> -->
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <h3 class="about-header"> About GTL/KG </h3>
+        <h3 class="about-header"> {{page.aboutSection_title}} </h3>
         <hr class="about-hr">
       </div>
     </div>
     
     <div class="row">
       <div class="col-sm-4 icon">
-        <img class="img-fluid mx-auto" src="img/neighborhood.svg"/>
-        <h4> Neighborhood enhancements </h4>
-        <p> As property owners and managers with nearly 100
-            years’ experience in Southern California, we know how important it is for a business
-            integrate itself in the community. We make it our mission to connect our tenants with
-            neighborhood resources so that they become flourishing and active members of their
-            new homes. </p>
+        <img class="img-fluid mx-auto" src="{{ page.icon1 | prepend: site.baseurl | replace: '//', '/' }}"/>
+        <h4> {{page.icon1_title}} </h4>
+        <p> {{page.icon1_description}}</p>
       </div>
       <div class="col-sm-4 icon">
-        <img class="img-fluid mx-auto" src="img/concierge.svg"/>
-        <h4> Concierge Services </h4>
-        <p> We provide extraordinary attentiveness to tenant needs, including connecting
-them to local resources to ensure they become vibrant members of their
-community.</p>
+        <img class="img-fluid mx-auto" src="{{ page.icon2 | prepend: site.baseurl | replace: '//', '/' }}"/>
+        <h4> {{page.icon2_title}} </h4>
+        <p> {{page.icon2_description}}</p>
       </div>
       <div class="col-sm-4 icon">
-        <img class="img-fluid mx-auto" src="img/family.svg"/>
-        <h4> Family operated </h4>
-        <p> Four generations of our family have made sure that our tenants—from Fortune
-500 companies to start-ups—feel at home in our properties and are a part of the
-family.</p>
+        <img class="img-fluid mx-auto" src="{{ page.icon3 | prepend: site.baseurl | replace: '//', '/' }}"/>
+        <h4> {{page.icon3_title}} </h4>
+        <p> {{page.icon3_description}}</p>
 
       </div>
     </div>
@@ -149,9 +143,8 @@ family.</p>
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-md-12 mx-auto text-center block-quote">
-        <h2 style="margin-bottom:40px"> For questions or rental inquiries
-please contact us.</h2> 
-        <a href="#" class="btn btn-gold"> Contact Us! </a>
+        <h2 style="margin-bottom:40px"> {{page.contactText}} </h2> 
+        <a href="#" class="btn btn-gold"> {{page.buttonText}} </a>
       </div>
     </div>
   </div>
@@ -159,15 +152,51 @@ please contact us.</h2>
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-3 no-gutter">
-        <img class="img-fluid" src="img/Coffee.jpg"/>
+         <div class="image_caption">
+   
+      <span class="screen">
+        <p class="title">
+          {{page.bottomImageCap1}}
+        </p>
+      </span>
+      <img class="img-fluid" src="{{ page.bottomImage1 | prepend: site.baseurl | replace: '//', '/' }}"/>
+     </div>
+        
       </div>
       <div class="col-sm-3 no-gutter">
-        <img class="img-fluid" src="img/IMAX.jpg"/>
+        <div class="image_caption">
+   
+      <span class="screen">
+        <p class="title">
+          {{page.bottomImageCap2}}
+        </p>
+      </span>
+       <img class="img-fluid" src="{{ page.bottomImage2 | prepend: site.baseurl | replace: '//', '/' }}"/>
+     </div>
       </div>
       <div class="col-sm-3 no-gutter">
-        <img class="img-fluid" src="img/Shoes.jpg"/>
+        <div class="image_caption">
+   
+      <span class="screen">
+        <p class="title">
+          {{page.bottomImageCap3}}
+        </p>
+      </span>
+        <img class="img-fluid" src="{{ page.bottomImage3 | prepend: site.baseurl | replace: '//', '/' }}"/>
+     </div>
+
+       
       </div>
       <div class="col-sm-3 no-gutter">
-        <img class="img-fluid" src="img/Sunglasses.jpg"/>
+        <div class="image_caption">
+   
+      <span class="screen">
+        <p class="title">
+          {{page.bottomImageCap4}}
+        </p>
+      </span>
+        <img class="img-fluid" src="{{ page.bottomImage4 | prepend: site.baseurl | replace: '//', '/' }}"/>
+     </div>
+        
      </div>                   
     </div>  
