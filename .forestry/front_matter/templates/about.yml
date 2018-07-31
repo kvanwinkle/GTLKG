@@ -19,24 +19,5 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-- type: textarea
-  name: paragraph_2
-  label: Paragraph 2
-- type: textarea
-  name: point1
-  label: Bullet Point 1
-  config:
-    wysiwyg: false
-    schema:
-      format: markdown
-- type: textarea
-  name: point2
-  label: Bullet Point 2
-- type: textarea
-  name: point3
-  label: Bullet Point 3
-- type: textarea
-  name: point4
-  label: Bullet Point 4
 pages:
 - about.html
