@@ -130,29 +130,44 @@ a {
 
 .odd {
   background-color:$darkPurple;
+  height:100%
 } 
 
 .even {
   background-color:$lavendar;
+  height:100%
 }
   
   div {
-  width: 75%;
+  width: 100%;
   margin: 0px auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
-  
 
   }
 
-
-  h1{
+   h1{
     color: white;
+    font-family:$Cardo;
+    font-size:60px;
   }
+
+  @media screen and (max-width: 1024px) {
+    h1 {
+    font-size:50px
+     }
+    }
+
+
+ 
 
   p {
     color: white;
+    font-size: 18px!important;
+    text-transform: uppercase;
+    margin-top:10px;
+    
   }
   
 }
@@ -266,7 +281,7 @@ hr {
   left: 0;
   right: 0;
   background-color: $darkPurple;
-  opacity:.75;
+  opacity:.80;
 }
 
 .icon {
@@ -388,4 +403,43 @@ img::-moz-selection {
   &:hover {
             color: fade-out($gold, .2);
           }
+}
+
+
+.slider {
+
+  width: 100%;
+  display:flex;
+  align-items:center;
+    
+
+ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor:pointer;
+}
+img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+}
+
+.propertyMasthead {
+
+   
+    margin-top: 100px;
+    height: 60vh!important;
+
+   @media only screen and (max-width: 992px) {
+    margin-top: 66px;
+   }
+
 }
