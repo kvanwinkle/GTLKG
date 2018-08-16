@@ -1,54 +1,48 @@
 ---
-label: Beverly Grove
-hide_body: 
-is_partial: 
+label: Property
+hide_body: true
+is_partial: false
 fields:
-- name: layout
-  label: Layout
-  type: text
-  hidden: false
-  default: ''
 - name: title
   label: Title
   type: text
-  hidden: false
+  hidden: true
   default: ''
 - name: background
-  label: Background
+  label: 'Header Image '
   type: file
   hidden: false
   default: ''
 - name: isVacancy
-  label: Isvacancy
+  label: 'Vacancy Available '
   type: boolean
   hidden: false
   default: ''
+  description: 'Toggle to show the Vacancy Bar '
 - name: vacancyAvailable
-  label: Vacancyavailable
+  label: 'Vacancy Text '
   type: text
   hidden: false
   default: ''
+  description: 'Text that shows in the Vacancy Bar '
 - name: propertyHeader
-  label: Propertyheader
+  label: Property Description Header
   type: text
   hidden: false
   default: ''
 - name: propertyDescription
-  label: Propertydescription
+  label: 'Property Description '
   type: textarea
   hidden: false
   default: ''
-- name: propertyImages
-  label: Propertyimages
-  type: field_group_list
-  fields:
-  - name: image_path
-    label: Image path
-    type: text
-    hidden: false
-    default: ''
-  hidden: false
-  default: ''
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: image_gallery
+  name: propertyImages
+  label: 'Property Images '
+  description: 'Upload Property Images '
 - name: facts
   label: Facts
   type: field_group_list
@@ -65,13 +59,13 @@ fields:
     default: ''
   hidden: false
   default: ''
-- name: background_stories
-  label: Background stories
-  type: text
-  hidden: false
-  default: ''
+  config:
+    labelField: description
+- type: file
+  name: background_stories
+  label: Tenant Stories Background Image
 - name: storiesHeader
-  label: Storiesheader
+  label: Tenant Stories Header
   type: text
   hidden: false
   default: ''
@@ -80,6 +74,10 @@ fields:
   type: textarea
   hidden: false
   default: ''
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 - name: storiesImage
   label: Storiesimage
   type: text
@@ -95,3 +93,6 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: textarea
+  name: ''
+  label: ''
