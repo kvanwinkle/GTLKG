@@ -60,7 +60,7 @@ fields:
   hidden: false
   default: ''
   config:
-    labelField: description
+    labelField: 
 - type: file
   name: background_stories
   label: Tenant Stories Background Image
