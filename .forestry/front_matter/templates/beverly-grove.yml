@@ -1,0 +1,95 @@
+---
+label: Property
+hide_body: true
+is_partial: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: background
+  label: 'Header Image '
+  type: file
+  hidden: false
+  default: ''
+- name: isVacancy
+  label: 'Vacancy Available '
+  type: boolean
+  hidden: false
+  default: ''
+  description: 'Toggle to show the Vacancy Bar '
+- name: vacancyAvailable
+  label: 'Vacancy Text '
+  type: text
+  hidden: false
+  default: ''
+  description: 'Text that shows in the Vacancy Bar '
+- name: propertyHeader
+  label: Property Description Header
+  type: text
+  hidden: false
+  default: ''
+- name: propertyDescription
+  label: 'Property Description '
+  type: textarea
+  hidden: false
+  default: ''
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: image_gallery
+  name: propertyImages
+  label: 'Property Images '
+  description: 'Upload Property Images '
+- name: facts
+  label: Facts
+  type: field_group_list
+  fields:
+  - name: number
+    label: Number
+    type: text
+    hidden: false
+    default: ''
+  - name: description
+    label: Description
+    type: text
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+  config:
+    labelField: description
+- type: file
+  name: background_stories
+  label: Tenant Stories Background Image
+- name: storiesHeader
+  label: Tenant Stories Header
+  type: text
+  hidden: false
+  default: ''
+- name: storiesDescription
+  label: Tenant Story Description
+  type: textarea
+  hidden: false
+  default: ''
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: file
+  name: storiesImage
+  label: 'Tenant Story Image '
+- name: contactText
+  label: Contact Us Text
+  type: text
+  hidden: false
+  default: ''
+- name: buttonText
+  label: Contact Us Button
+  type: text
+  hidden: false
+  default: ''
+pages:
+- beverlyGrove.html
