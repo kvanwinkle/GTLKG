@@ -70,7 +70,7 @@ fields:
   hidden: false
   default: ''
 - name: storiesDescription
-  label: Storiesdescription
+  label: Tenant Story Description
   type: textarea
   hidden: false
   default: ''
@@ -78,18 +78,16 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-- name: storiesImage
-  label: Storiesimage
-  type: text
-  hidden: false
-  default: ''
+- type: file
+  name: storiesImage
+  label: 'Tenant Story Image '
 - name: contactText
-  label: Contacttext
+  label: Contact Us Text
   type: text
   hidden: false
   default: ''
 - name: buttonText
-  label: Buttontext
+  label: Contact Us Button
   type: text
   hidden: false
   default: ''
