@@ -1,0 +1,97 @@
+---
+label: Beverly Grove
+hide_body: 
+is_partial: 
+fields:
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: ''
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: background
+  label: Background
+  type: file
+  hidden: false
+  default: ''
+- name: isVacancy
+  label: Isvacancy
+  type: boolean
+  hidden: false
+  default: ''
+- name: vacancyAvailable
+  label: Vacancyavailable
+  type: text
+  hidden: false
+  default: ''
+- name: propertyHeader
+  label: Propertyheader
+  type: text
+  hidden: false
+  default: ''
+- name: propertyDescription
+  label: Propertydescription
+  type: textarea
+  hidden: false
+  default: ''
+- name: propertyImages
+  label: Propertyimages
+  type: field_group_list
+  fields:
+  - name: image_path
+    label: Image path
+    type: text
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+- name: facts
+  label: Facts
+  type: field_group_list
+  fields:
+  - name: number
+    label: Number
+    type: text
+    hidden: false
+    default: ''
+  - name: description
+    label: Description
+    type: text
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+- name: background_stories
+  label: Background stories
+  type: text
+  hidden: false
+  default: ''
+- name: storiesHeader
+  label: Storiesheader
+  type: text
+  hidden: false
+  default: ''
+- name: storiesDescription
+  label: Storiesdescription
+  type: textarea
+  hidden: false
+  default: ''
+- name: storiesImage
+  label: Storiesimage
+  type: text
+  hidden: false
+  default: ''
+- name: contactText
+  label: Contacttext
+  type: text
+  hidden: false
+  default: ''
+- name: buttonText
+  label: Buttontext
+  type: text
+  hidden: false
+  default: ''
