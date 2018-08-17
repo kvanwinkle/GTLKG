@@ -7,6 +7,7 @@ fields:
   name: block
   label: Block
   default: vacancy
+  hidden: true
 - type: text
   name: headline
   label: 'Headline '
