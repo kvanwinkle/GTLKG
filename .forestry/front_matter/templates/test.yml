@@ -1,11 +1,19 @@
 ---
-label: Test
+label: 'New Vacancy '
 hide_body: false
 is_partial: true
 fields:
 - type: text
-  name: name
-  label: Name
-- type: file
-  name: test_image_
-  label: 'Test Image '
+  name: block
+  label: Block
+  default: vacancy
+- type: text
+  name: headline
+  label: 'Headline '
+- type: textarea
+  name: content
+  label: Content
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
