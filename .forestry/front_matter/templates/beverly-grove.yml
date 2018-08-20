@@ -28,7 +28,8 @@ fields:
 - type: blocks
   name: page_sections
   label: 'Add Vacancies '
-  template_types: []
+  template_types:
+  - test
 - name: propertyHeader
   label: Property Description Header
   type: text
