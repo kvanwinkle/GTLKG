@@ -97,6 +97,7 @@ fields:
   hidden: false
   default: ''
 pages:
+- beverly-grove.html
 - melrose.html
 - beverly-hills.html
 - west-third-street.html
