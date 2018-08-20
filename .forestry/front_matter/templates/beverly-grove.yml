@@ -97,4 +97,5 @@ fields:
   hidden: false
   default: ''
 pages:
+- beverly-hills.html
 - west-third-street.html
