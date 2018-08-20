@@ -1,5 +1,5 @@
 ---
-label: 'New Vacancy '
+label: 'Vacancy '
 hide_body: false
 is_partial: true
 fields:
@@ -9,12 +9,30 @@ fields:
   default: vacancy
   hidden: true
 - type: text
-  name: headline
-  label: 'Headline '
+  name: address
+  label: 'Address '
 - type: textarea
-  name: content
-  label: Content
+  name: vacancy_description
+  label: 'Vacancy Description '
   config:
     wysiwyg: true
     schema:
       format: markdown
+- type: list
+  name: atAGlance
+  label: 'At A Glance '
+  config:
+    max: '4'
+    use_select: false
+    source:
+      type: datafiles
+- type: image_gallery
+  name: propertyImages
+  label: 'Vacancy Images '
+- type: text
+  name: buttonText
+  label: 'Button Text '
+- type: text
+  name: buttonEmail
+  label: 'Contact Email '
+  description: 'Email to learn about this property '
