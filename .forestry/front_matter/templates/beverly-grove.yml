@@ -25,6 +25,11 @@ fields:
   hidden: false
   default: ''
   description: 'Text that shows in the Vacancy Bar '
+- type: blocks
+  name: page_sections
+  label: 'Add Vacancies '
+  template_types:
+  - test
 - name: propertyHeader
   label: Property Description Header
   type: text
@@ -91,10 +96,5 @@ fields:
   type: text
   hidden: false
   default: ''
-- type: blocks
-  label: 'Available Vacancies '
-  name: page_sections
-  template_types:
-  - test
 pages:
 - beverlyGrove.html
