@@ -443,3 +443,41 @@ img {
    }
 
 }
+
+ul.glance {
+
+font-family: $Josefin;
+font-size: 15px;
+font-weight: 300;
+list-style: none;
+letter-spacing: 1.7px;
+padding: 5%;
+padding-top: 0px;
+margin-bottom: 10px;
+
+li {
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+  
+}
+
+h5.vacancy-header {
+  text-decoration:underline;
+  font-size: 18px;
+  text-align: left;
+  padding: 5%;
+}
+
+.vacancy-btn {
+
+padding-top: 10px!important;
+padding-bottom: 10px!important;
+padding-left: 5px!important;
+padding-right: 5px!important;
+width:80%;
+
+
+}
+
