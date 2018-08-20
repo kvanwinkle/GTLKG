@@ -91,5 +91,10 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: blocks
+  label: 'Available Vacancies '
+  name: page_sections
+  template_types:
+  - test
 pages:
 - beverlyGrove.html
