@@ -22,8 +22,11 @@ fields:
   name: atAGlance
   label: 'At A Glance '
   config:
+    min: '2'
     max: '4'
     use_select: false
+    source:
+      type: datafiles
 - type: image_gallery
   name: propertyImages
   label: 'Vacancy Images '
