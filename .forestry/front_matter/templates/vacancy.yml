@@ -18,7 +18,7 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-- type: select
+- type: list
   name: atAGlance
   label: 'At A Glance '
   config:
