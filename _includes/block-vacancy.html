@@ -8,8 +8,8 @@
           <ul id="vacancySlider">
 
             {% for image in section.vacancyImages %}
-              <li data-thumb="{{ image.image_path | prepend: site.baseurl | replace: '//', '/' }}">
-                  <img src="{{ image.image_path | prepend: site.baseurl | replace: '//', '/' }}"/>
+              <li data-thumb="{{ image | prepend: site.baseurl | replace: '//', '/' }}">
+                  <img src="{{ image | prepend: site.baseurl | replace: '//', '/' }}"/>
               </li>
             {% endfor %} 
             
@@ -34,7 +34,7 @@
             <h5 class="vacancy-header"> At a glance </h5>
                 <ul class="glance">
                   {% for post in section.atAGlance %}
-                  <li> {{post.list_item}} </li>
+                  <li> {{post}} </li>
                  {% endfor %}
                 </ul>  
 
