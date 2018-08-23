@@ -17,7 +17,7 @@ fields:
   label: Image Caption
 - type: textarea
   name: paragraph_1
-  label: Paragraph 1
+  label: Text
   config:
     wysiwyg: true
     schema:
