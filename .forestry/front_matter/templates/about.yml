@@ -12,6 +12,9 @@ fields:
 - type: file
   name: about_image
   label: About Image
+- type: text
+  name: caption
+  label: Image Caption
 - type: textarea
   name: paragraph_1
   label: Paragraph 1
