@@ -5,6 +5,7 @@ description:
 background: "/img/bg-about.jpg"
 page_title: About GTL/KG
 about_image: "/img/about_image.jpg"
+caption: GTL/KG founder William Katz at his first property in 1923.
 paragraph_1: "It all started with a vision… \n\n<br><br>\n\nWhen William Katz took
   the solo journey from Russia to the United States at 13 years of age, he knew the
   future of America was in the west. A cap maker by trade, William came to California
@@ -37,6 +38,10 @@ paragraph_1: "It all started with a vision… \n\n<br><br>\n\nWhen William Katz 
       <div class="col-lg-8 col-md-10 mx-auto">
        <img class="img-fluid" src="{{ page.about_image | prepend: site.baseurl | replace: '//', '/' }}"/>
       </div>
+       <div class="col-lg-8 col-md-10 mx-auto">
+       <p style="padding:0px;margin-top:5px;margin-left:5px;font-size:14px!important;font-weight:500!important"> {{page.caption}}  </p>
+      </div>
+
     </div>
   </div>
 
@@ -44,7 +49,7 @@ paragraph_1: "It all started with a vision… \n\n<br><br>\n\nWhen William Katz 
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <p style="font-weight:500!important;"> {{page.paragraph_1}} </p>	
+        <p style="font-weight:300!important;padding-top:0px;margin-top:10px;"> {{page.paragraph_1}} </p>	
       </div>
     </div>
   </div>
