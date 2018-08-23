@@ -5,7 +5,7 @@
       
       <div style="margin-bottom:50px;" class="col-lg-5 col-md-6">
               <div class="slider">
-          <ul id="vacancySlider">
+          <ul class="vacancySlider">
 
             {% for image in section.vacancyImages %}
               <li data-thumb="{{ image | prepend: site.baseurl | replace: '//', '/' }}">
