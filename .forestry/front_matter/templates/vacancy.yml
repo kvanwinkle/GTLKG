@@ -28,7 +28,7 @@ fields:
     source:
       type: datafiles
 - type: image_gallery
-  name: propertyImages
+  name: vacancyImages
   label: 'Vacancy Images '
 - type: text
   name: buttonText
