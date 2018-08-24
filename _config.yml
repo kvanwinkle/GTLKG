@@ -2,8 +2,8 @@ title:             GTL/KG
 email:             info@gtlkg.com
 description:       
 author:            Katherine Van Winkle
-baseurl:           "gtlkg.com"
-url:               ""
+baseurl:           ""
+url:               "gtlkg.com"
 
 # Social Profiles
 instagram_username:  kittysocal
