@@ -137,6 +137,9 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: text
+  name: buttonEmail
+  label: 'Button Email '
 - name: bottomImage1
   label: Bottom image1
   type: file
