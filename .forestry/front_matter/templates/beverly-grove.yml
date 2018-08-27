@@ -96,6 +96,9 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: text
+  label: 'Button Email '
+  name: buttonEmail
 pages:
 - west-third-street.html
 - beverly-hills.html
