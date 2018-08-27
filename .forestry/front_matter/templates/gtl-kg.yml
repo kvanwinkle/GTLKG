@@ -1,13 +1,8 @@
 ---
 label: GTL/KG
-hide_body: 
-is_partial: 
+hide_body: true
+is_partial: false
 fields:
-- name: layout
-  label: Layout
-  type: text
-  hidden: false
-  default: ''
 - name: title
   label: Title
   type: text
@@ -29,147 +24,156 @@ fields:
   hidden: false
   default: ''
 - name: property1_name
-  label: Property1 name
-  type: text
-  hidden: false
-  default: ''
-- name: property2_name
-  label: Property2 name
-  type: text
-  hidden: false
-  default: ''
-- name: property3_name
-  label: Property3 name
-  type: text
-  hidden: false
-  default: ''
-- name: property4_name
-  label: Property4 name
+  label: Property 1 name
   type: text
   hidden: false
   default: ''
 - name: property1
-  label: Property1
+  label: 'Property 1 Image '
   type: file
+  hidden: false
+  default: ''
+- type: boolean
+  name: property1Vacancy
+  label: property 1 Vacancy
+- name: property2_name
+  label: Property 2 name
+  type: text
   hidden: false
   default: ''
 - name: property2
-  label: Property2
-  type: file
-  hidden: false
-  default: ''
-- name: property3
-  label: Property3
-  type: file
-  hidden: false
-  default: ''
-- name: property4
-  label: Property4
+  label: Property 2 Image
   type: file
   hidden: false
   default: ''
 - name: property2Vacancy
-  label: Property2vacancy
+  label: Property 2 vacancy
   type: boolean
   hidden: false
   default: ''
+- name: property3_name
+  label: Property 3 name
+  type: text
+  hidden: false
+  default: ''
+- name: property3
+  label: Property 3 Image
+  type: file
+  hidden: false
+  default: ''
+- type: boolean
+  name: property3Vacancy
+  label: property 3 Vacancy
+- name: property4_name
+  label: Property 4 name
+  type: text
+  hidden: false
+  default: ''
+- name: property4
+  label: Property 4 Image
+  type: file
+  hidden: false
+  default: ''
+- type: boolean
+  name: property4Vacancy
+  label: 'Property 4 Vacancy '
 - name: aboutSection_title
-  label: Aboutsection title
+  label: About section Title
   type: text
   hidden: false
   default: ''
 - name: icon1
-  label: Icon1
-  type: file
-  hidden: false
-  default: ''
-- name: icon2
-  label: Icon2
-  type: file
-  hidden: false
-  default: ''
-- name: icon3
-  label: Icon3
+  label: Icon 1
   type: file
   hidden: false
   default: ''
 - name: icon1_title
-  label: Icon1 title
-  type: text
-  hidden: false
-  default: ''
-- name: icon2_title
-  label: Icon2 title
-  type: text
-  hidden: false
-  default: ''
-- name: icon3_title
-  label: Icon3 title
+  label: Icon 1 title
   type: text
   hidden: false
   default: ''
 - name: icon1_description
-  label: Icon1 description
+  label: Icon 1 description
   type: textarea
+  hidden: false
+  default: ''
+- name: icon2
+  label: Icon 2
+  type: file
+  hidden: false
+  default: ''
+- name: icon2_title
+  label: Icon 2 title
+  type: text
   hidden: false
   default: ''
 - name: icon2_description
-  label: Icon2 description
+  label: Icon 2 description
   type: textarea
   hidden: false
   default: ''
+- name: icon3
+  label: Icon 3
+  type: file
+  hidden: false
+  default: ''
+- name: icon3_title
+  label: Icon 3 title
+  type: text
+  hidden: false
+  default: ''
 - name: icon3_description
-  label: Icon3 description
+  label: Icon 3 description
   type: textarea
   hidden: false
   default: ''
 - name: contactText
-  label: Contacttext
+  label: Contact text
   type: text
   hidden: false
   default: ''
 - name: buttonText
-  label: Buttontext
+  label: Button text
   type: text
   hidden: false
   default: ''
 - name: bottomImage1
-  label: Bottomimage1
+  label: Bottom image1
   type: file
   hidden: false
   default: ''
 - name: bottomImageCap1
-  label: Bottomimagecap1
+  label: Bottom Image 1 Caption
   type: text
   hidden: false
   default: ''
 - name: bottomImage2
-  label: Bottomimage2
+  label: Bottom image 2
   type: file
   hidden: false
   default: ''
 - name: bottomImageCap2
-  label: Bottomimagecap2
+  label: Bottom image 2 caption
   type: text
   hidden: false
   default: ''
 - name: bottomImage3
-  label: Bottomimage3
+  label: Bottom image 3
   type: file
   hidden: false
   default: ''
 - name: bottomImageCap3
-  label: Bottomimagecap3
+  label: Bottom Image 3 Caption
   type: text
   hidden: false
   default: ''
 - name: bottomImage4
-  label: Bottomimage4
+  label: Bottom image 4
   type: file
   hidden: false
   default: ''
 - name: bottomImageCap4
-  label: Bottomimagecap4
+  label: 'Bottom Image 4 Caption '
   type: text
   hidden: false
   default: ''
