@@ -41,6 +41,14 @@ layout: default
   {{ content }}
 
 <div class="container">
+  {% if page.isVacancy == true %}
+   <div class="row" style="margin-bottom:30px">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h3> Current Properties </h3>
+        <hr>
+      </div>
+    </div>
+  {% endif %}  
   <div class="row">
     <div class="col-md-6" style="margin-bottom:30px">
 
