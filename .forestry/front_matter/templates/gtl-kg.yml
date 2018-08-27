@@ -1,0 +1,175 @@
+---
+label: GTL/KG
+hide_body: 
+is_partial: 
+fields:
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: ''
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: background
+  label: Background
+  type: file
+  hidden: false
+  default: ''
+- name: top_quote
+  label: Top quote
+  type: textarea
+  hidden: false
+  default: ''
+- name: portfolio_title
+  label: Portfolio title
+  type: text
+  hidden: false
+  default: ''
+- name: property1_name
+  label: Property1 name
+  type: text
+  hidden: false
+  default: ''
+- name: property2_name
+  label: Property2 name
+  type: text
+  hidden: false
+  default: ''
+- name: property3_name
+  label: Property3 name
+  type: text
+  hidden: false
+  default: ''
+- name: property4_name
+  label: Property4 name
+  type: text
+  hidden: false
+  default: ''
+- name: property1
+  label: Property1
+  type: file
+  hidden: false
+  default: ''
+- name: property2
+  label: Property2
+  type: file
+  hidden: false
+  default: ''
+- name: property3
+  label: Property3
+  type: file
+  hidden: false
+  default: ''
+- name: property4
+  label: Property4
+  type: file
+  hidden: false
+  default: ''
+- name: property2Vacancy
+  label: Property2vacancy
+  type: boolean
+  hidden: false
+  default: ''
+- name: aboutSection_title
+  label: Aboutsection title
+  type: text
+  hidden: false
+  default: ''
+- name: icon1
+  label: Icon1
+  type: file
+  hidden: false
+  default: ''
+- name: icon2
+  label: Icon2
+  type: file
+  hidden: false
+  default: ''
+- name: icon3
+  label: Icon3
+  type: file
+  hidden: false
+  default: ''
+- name: icon1_title
+  label: Icon1 title
+  type: text
+  hidden: false
+  default: ''
+- name: icon2_title
+  label: Icon2 title
+  type: text
+  hidden: false
+  default: ''
+- name: icon3_title
+  label: Icon3 title
+  type: text
+  hidden: false
+  default: ''
+- name: icon1_description
+  label: Icon1 description
+  type: textarea
+  hidden: false
+  default: ''
+- name: icon2_description
+  label: Icon2 description
+  type: textarea
+  hidden: false
+  default: ''
+- name: icon3_description
+  label: Icon3 description
+  type: textarea
+  hidden: false
+  default: ''
+- name: contactText
+  label: Contacttext
+  type: text
+  hidden: false
+  default: ''
+- name: buttonText
+  label: Buttontext
+  type: text
+  hidden: false
+  default: ''
+- name: bottomImage1
+  label: Bottomimage1
+  type: file
+  hidden: false
+  default: ''
+- name: bottomImageCap1
+  label: Bottomimagecap1
+  type: text
+  hidden: false
+  default: ''
+- name: bottomImage2
+  label: Bottomimage2
+  type: file
+  hidden: false
+  default: ''
+- name: bottomImageCap2
+  label: Bottomimagecap2
+  type: text
+  hidden: false
+  default: ''
+- name: bottomImage3
+  label: Bottomimage3
+  type: file
+  hidden: false
+  default: ''
+- name: bottomImageCap3
+  label: Bottomimagecap3
+  type: text
+  hidden: false
+  default: ''
+- name: bottomImage4
+  label: Bottomimage4
+  type: file
+  hidden: false
+  default: ''
+- name: bottomImageCap4
+  label: Bottomimagecap4
+  type: text
+  hidden: false
+  default: ''
