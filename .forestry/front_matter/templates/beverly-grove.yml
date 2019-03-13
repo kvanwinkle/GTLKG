@@ -1,7 +1,6 @@
 ---
 label: Property
 hide_body: true
-is_partial: false
 fields:
 - name: title
   label: Title
@@ -100,7 +99,7 @@ fields:
   label: 'Button Email '
   name: buttonEmail
 pages:
+- west-third-street.html
+- beverly-hills.html
 - beverly-grove.html
 - melrose.html
-- beverly-hills.html
-- west-third-street.html
