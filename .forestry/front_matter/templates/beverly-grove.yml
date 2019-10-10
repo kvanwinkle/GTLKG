@@ -99,7 +99,7 @@ fields:
   label: 'Button Email '
   name: buttonEmail
 pages:
-- west-third-street.html
 - melrose.html
+- west-third-street.html
 - beverly-hills.html
 - beverly-grove.html
